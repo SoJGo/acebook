@@ -1,51 +1,75 @@
-## Access on heroku
+# Acebook
+---
 
-https://damp-hollows-50420.herokuapp.com/
+### A familiar sounding social media platform. A clone take on the classic that is Facebook.
+---
+
+## Usage
+---
+### Visit
+---
+### Acebook is deployed on Heroku and can be visited [here.](https://damp-hollows-50420.herokuapp.com/)
+
 
 Note: Heroku uses 'ephemeral' hard drive. Any images on the page do not persist after the application is restarted.
 
-## To run locally:
-Use Node v16.14.0
+---
+
+### Run Locally
+---
+
 ```
-  > bundle install
-  > yarn install
-  > bin/rails db:create
-  > bin/rails db:migrate
+  $ nvm use 16.14.0
+  $ bundle install
+  $ yarn install
+  $ bin/rails db:create
+  $ bin/rails db:migrate
 ```
 
 To access on http://localhost:3000/ :
 ```
-  > bin/rails server
+  $ bin/rails server
+```
+To run tests:
+```
+  $ rspec
 ```
 
-## Technologies used:
-Ruby on Rails, Bootstrap, PostgreSQL, Rspec, Capybara
+---
+## Technologies Used
+---
+Ruby-on-Rails, Bootstrap, PostgreSQL, RSpec, Capybara
 
+---
 ## Demo
 ---
 <p style="text-align: center">
   <img src="https://i.imgur.com/zPFDSEo.gif">
 </p>
 
-
-## Features:
+---
+## Features
+---
 - visitors must sign up to use the app
 - users can add posts with images and descriptions
 - users can comment on posts
 - users can like posts
 
-## Features in development:
-- chat with rooms (currently available on XXXX branch)
-
-## Goals achieved:
+## Goals achieved
 - MVP
 - implemented CI and CD channels
 - deployed the app on Heroku
+  
 
 ## Room for improvement
 - some edges cases still need to bo considered
 
-## User stories:
+---
+## User Stories
+---
+<details>
+  <summary>Click for a full list of User Stories we created and worked from</summary>
+
 ### MVP
 ---
 ```
@@ -199,13 +223,16 @@ So that I can be fickle
 I would like to be able to remove a previous like
 ```
 
+</details>
 
-## Domain model:
+---
+## Domain Model
+---
 <p style="text-align: center">
   <img src="https://i.imgur.com/d3Puq21.jpg">
 </p>
 
-### Edge cases considered:
+### Edge cases considered
   - Adding a post
     - user can only add jpeg or png
   - Liking a post
@@ -214,12 +241,16 @@ I would like to be able to remove a previous like
     - user can't sign up on the same email
     - user password has to be 6-10 characters long
 
+---
 ## MVP Wireframing
 ---
 ### Sign up page
 <p style="text-align: center">
   <img src="https://i.imgur.com/plxOpBK.png">
 </p>
+
+<details>
+  <summary>Click for more wireframes</summary>
 
 ### Login page
 <p style="text-align: center">
@@ -236,3 +267,4 @@ I would like to be able to remove a previous like
   <img src="https://i.imgur.com/M3UcvrZ.png">
 </p>
 
+</details>
